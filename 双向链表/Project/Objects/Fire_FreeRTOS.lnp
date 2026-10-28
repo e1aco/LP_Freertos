@@ -1,0 +1,9 @@
+--cpu Cortex-M3
+".\objects\list.o"
+".\objects\main.o"
+".\objects\startup_armcm3.o"
+".\objects\system_armcm3.o"
+--strict --scatter ".\RTE\Device\ARMCM3\ARMCM3_ac6.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Fire_FreeRTOS.map" -o .\Objects\Fire_FreeRTOS.axf
