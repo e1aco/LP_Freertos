@@ -1,0 +1,7 @@
+{
+  "keil": {
+    "project": "任务的定义和任务切换/Project/Fire_FreeRTOS.uvprojx",
+    "target": "Target_1",
+    "log_dir": "任务的定义和任务切换/.embeddedskills/build"
+  }
+}

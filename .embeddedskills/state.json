@@ -1,0 +1,22 @@
+{
+  "last_build": {
+    "provider": "keil",
+    "action": "rebuild",
+    "project": "任务的定义和任务切换/Project/Fire_FreeRTOS.uvprojx",
+    "target": "Target_1",
+    "log_dir": "任务的定义和任务切换/.embeddedskills/build",
+    "artifacts": {
+      "axf_file": "任务的定义和任务切换/Project/Objects/Fire_FreeRTOS.axf",
+      "flash_file": "任务的定义和任务切换/Project/Objects/Fire_FreeRTOS.axf",
+      "debug_file": "任务的定义和任务切换/Project/Objects/Fire_FreeRTOS.axf",
+      "output_dir": "任务的定义和任务切换/Project/Objects",
+      "log_file": "任务的定义和任务切换/.embeddedskills/build/Fire_FreeRTOS-Target_1-rebuild.log"
+    },
+    "axf_file": "任务的定义和任务切换/Project/Objects/Fire_FreeRTOS.axf",
+    "flash_file": "任务的定义和任务切换/Project/Objects/Fire_FreeRTOS.axf",
+    "debug_file": "任务的定义和任务切换/Project/Objects/Fire_FreeRTOS.axf",
+    "output_dir": "任务的定义和任务切换/Project/Objects",
+    "log_file": "任务的定义和任务切换/.embeddedskills/build/Fire_FreeRTOS-Target_1-rebuild.log",
+    "timestamp": "2026-11-04T15:38:09+08:00"
+  }
+}
