@@ -1,8 +1,8 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
-portCHAR flag1; // 变量
-portCHAR flag2;
+volatile portCHAR flag1; // 变量（volatile：防止编译器优化掉赋值）
+volatile portCHAR flag2;
 extern List_t pxReadyTasksLists[configMAX_PRIORITIES]; // 任务就绪列表
 
 TaskHandle_t Task1_Handle; // 任务1的TCB指针
@@ -52,7 +52,7 @@ int main(void)
  }
 
  /* 软件延时 */
- void delay (uint32_t count)
+ void delay (volatile uint32_t count)
  {
      for (; count!=0; count--);
  }

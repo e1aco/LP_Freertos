@@ -120,7 +120,7 @@ TaskHandle_t xTaskCreateStatic( TaskFunction_t pxTaskCode,
 
 void vTaskStartScheduler( void )
 {
-    /* 本章还不支持优先级，手动指定第一个运行的任务 */
+    /* 手动指定第一个运行的任务 */
     pxCurrentTCB = &Task1TCB;
 
     /* 启动调度器，成功则不返回 */
