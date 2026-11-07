@@ -1,3 +1,5 @@
+// 本项目的系统时钟是 configCPU_CLOCK_HZ = 12000000，效果也是20ms高电平
+
 #include"FreeRTOS.h"
 #include"task.h"
 

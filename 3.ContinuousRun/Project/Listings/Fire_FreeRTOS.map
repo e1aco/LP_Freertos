@@ -412,20 +412,20 @@ Image Symbol Table
     [Anonymous Symbol]                       0x000007ec   Section        0  list.o(.text.vListInitialise)
     [Anonymous Symbol]                       0x0000081c   Section        0  list.o(.text.vListInitialiseItem)
     [Anonymous Symbol]                       0x0000082c   Section        0  list.o(.text.vListInsertEnd)
-    vPortSetupTimerInterrupt                 0x00000869   Thumb Code    42  port.o(.text.vPortSetupTimerInterrupt)
+    vPortSetupTimerInterrupt                 0x00000869   Thumb Code    46  port.o(.text.vPortSetupTimerInterrupt)
     [Anonymous Symbol]                       0x00000868   Section        0  port.o(.text.vPortSetupTimerInterrupt)
-    [Anonymous Symbol]                       0x00000894   Section        0  task.o(.text.vTaskDelay)
-    [Anonymous Symbol]                       0x000008c4   Section        0  task.o(.text.vTaskStartScheduler)
-    [Anonymous Symbol]                       0x00000934   Section        0  task.o(.text.vTaskSwitchContext)
-    [Anonymous Symbol]                       0x00000a64   Section        0  port.o(.text.xPortStartScheduler)
-    [Anonymous Symbol]                       0x00000a8c   Section        0  port.o(.text.xPortSysTickHandler)
-    [Anonymous Symbol]                       0x00000ab4   Section        0  task.o(.text.xTaskCreateStatic)
-    [Anonymous Symbol]                       0x00000b0c   Section        0  task.o(.text.xTaskIncrementTick)
-    .L.str                                   0x00000ba2   Data           5  task.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x00000ba2   Section        0  task.o(.rodata.str1.1)
-    .L.str                                   0x00000ba7   Data           6  main.o(.rodata.str1.1)
-    [Anonymous Symbol]                       0x00000ba7   Section        0  main.o(.rodata.str1.1)
-    .L.str.1                                 0x00000bad   Data           6  main.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x00000898   Section        0  task.o(.text.vTaskDelay)
+    [Anonymous Symbol]                       0x000008c8   Section        0  task.o(.text.vTaskStartScheduler)
+    [Anonymous Symbol]                       0x00000938   Section        0  task.o(.text.vTaskSwitchContext)
+    [Anonymous Symbol]                       0x00000a68   Section        0  port.o(.text.xPortStartScheduler)
+    [Anonymous Symbol]                       0x00000a90   Section        0  port.o(.text.xPortSysTickHandler)
+    [Anonymous Symbol]                       0x00000ab8   Section        0  task.o(.text.xTaskCreateStatic)
+    [Anonymous Symbol]                       0x00000b10   Section        0  task.o(.text.xTaskIncrementTick)
+    .L.str                                   0x00000ba6   Data           5  task.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x00000ba6   Section        0  task.o(.rodata.str1.1)
+    .L.str                                   0x00000bab   Data           6  main.o(.rodata.str1.1)
+    [Anonymous Symbol]                       0x00000bab   Section        0  main.o(.rodata.str1.1)
+    .L.str.1                                 0x00000bb1   Data           6  main.o(.rodata.str1.1)
     ulIdleTaskCounter                        0x20000708   Data           4  task.o(.bss.ulIdleTaskCounter)
     [Anonymous Symbol]                       0x20000708   Section        0  task.o(.bss.ulIdleTaskCounter)
 
@@ -552,15 +552,15 @@ Image Symbol Table
     vListInitialise                          0x000007ed   Thumb Code    46  list.o(.text.vListInitialise)
     vListInitialiseItem                      0x0000081d   Thumb Code    14  list.o(.text.vListInitialiseItem)
     vListInsertEnd                           0x0000082d   Thumb Code    58  list.o(.text.vListInsertEnd)
-    vTaskDelay                               0x00000895   Thumb Code    48  task.o(.text.vTaskDelay)
-    vTaskStartScheduler                      0x000008c5   Thumb Code   112  task.o(.text.vTaskStartScheduler)
-    vTaskSwitchContext                       0x00000935   Thumb Code   304  task.o(.text.vTaskSwitchContext)
-    xPortStartScheduler                      0x00000a65   Thumb Code    38  port.o(.text.xPortStartScheduler)
-    xPortSysTickHandler                      0x00000a8d   Thumb Code    40  port.o(.text.xPortSysTickHandler)
-    xTaskCreateStatic                        0x00000ab5   Thumb Code    86  task.o(.text.xTaskCreateStatic)
-    xTaskIncrementTick                       0x00000b0d   Thumb Code   150  task.o(.text.xTaskIncrementTick)
-    Region$$Table$$Base                      0x00000bb4   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00000bd4   Number         0  anon$$obj.o(Region$$Table)
+    vTaskDelay                               0x00000899   Thumb Code    48  task.o(.text.vTaskDelay)
+    vTaskStartScheduler                      0x000008c9   Thumb Code   112  task.o(.text.vTaskStartScheduler)
+    vTaskSwitchContext                       0x00000939   Thumb Code   304  task.o(.text.vTaskSwitchContext)
+    xPortStartScheduler                      0x00000a69   Thumb Code    38  port.o(.text.xPortStartScheduler)
+    xPortSysTickHandler                      0x00000a91   Thumb Code    40  port.o(.text.xPortSysTickHandler)
+    xTaskCreateStatic                        0x00000ab9   Thumb Code    86  task.o(.text.xTaskCreateStatic)
+    xTaskIncrementTick                       0x00000b11   Thumb Code   150  task.o(.text.xTaskIncrementTick)
+    Region$$Table$$Base                      0x00000bb8   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00000bd8   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_armcm3.o(.data.SystemCoreClock)
     IdleTaskStack                            0x20000004   Data         512  main.o(.bss.IdleTaskStack)
     IdleTaskTCB                              0x20000204   Data          48  main.o(.bss.IdleTaskTCB)
@@ -587,9 +587,9 @@ Memory Map of the image
 
   Image Entry point : 0x000003c1
 
-  Load Region LR_ROM (Base: 0x00000000, Size: 0x00000bd8, Max: 0x00080000, ABSOLUTE)
+  Load Region LR_ROM (Base: 0x00000000, Size: 0x00000bdc, Max: 0x00080000, ABSOLUTE)
 
-    Execution Region ER_ROM (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000bd4, Max: 0x00080000, ABSOLUTE)
+    Execution Region ER_ROM (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00000bd8, Max: 0x00080000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -678,33 +678,33 @@ Memory Map of the image
     0x0000082a   0x0000082a   0x00000002   PAD
     0x0000082c   0x0000082c   0x0000003a   Code   RO           33    .text.vListInsertEnd  list.o
     0x00000866   0x00000866   0x00000002   PAD
-    0x00000868   0x00000868   0x0000002a   Code   RO           14    .text.vPortSetupTimerInterrupt  port.o
-    0x00000892   0x00000892   0x00000002   PAD
-    0x00000894   0x00000894   0x00000030   Code   RO           56    .text.vTaskDelay    task.o
-    0x000008c4   0x000008c4   0x00000070   Code   RO           52    .text.vTaskStartScheduler  task.o
-    0x00000934   0x00000934   0x00000130   Code   RO           60    .text.vTaskSwitchContext  task.o
-    0x00000a64   0x00000a64   0x00000026   Code   RO           12    .text.xPortStartScheduler  port.o
-    0x00000a8a   0x00000a8a   0x00000002   PAD
-    0x00000a8c   0x00000a8c   0x00000028   Code   RO            8    .text.xPortSysTickHandler  port.o
-    0x00000ab4   0x00000ab4   0x00000056   Code   RO           48    .text.xTaskCreateStatic  task.o
-    0x00000b0a   0x00000b0a   0x00000002   PAD
-    0x00000b0c   0x00000b0c   0x00000096   Code   RO           58    .text.xTaskIncrementTick  task.o
-    0x00000ba2   0x00000ba2   0x00000005   Data   RO           65    .rodata.str1.1      task.o
-    0x00000ba7   0x00000ba7   0x0000000c   Data   RO           82    .rodata.str1.1      main.o
-    0x00000bb3   0x00000bb3   0x00000001   PAD
-    0x00000bb4   0x00000bb4   0x00000020   Data   RO          305    Region$$Table       anon$$obj.o
+    0x00000868   0x00000868   0x0000002e   Code   RO           14    .text.vPortSetupTimerInterrupt  port.o
+    0x00000896   0x00000896   0x00000002   PAD
+    0x00000898   0x00000898   0x00000030   Code   RO           56    .text.vTaskDelay    task.o
+    0x000008c8   0x000008c8   0x00000070   Code   RO           52    .text.vTaskStartScheduler  task.o
+    0x00000938   0x00000938   0x00000130   Code   RO           60    .text.vTaskSwitchContext  task.o
+    0x00000a68   0x00000a68   0x00000026   Code   RO           12    .text.xPortStartScheduler  port.o
+    0x00000a8e   0x00000a8e   0x00000002   PAD
+    0x00000a90   0x00000a90   0x00000028   Code   RO            8    .text.xPortSysTickHandler  port.o
+    0x00000ab8   0x00000ab8   0x00000056   Code   RO           48    .text.xTaskCreateStatic  task.o
+    0x00000b0e   0x00000b0e   0x00000002   PAD
+    0x00000b10   0x00000b10   0x00000096   Code   RO           58    .text.xTaskIncrementTick  task.o
+    0x00000ba6   0x00000ba6   0x00000005   Data   RO           65    .rodata.str1.1      task.o
+    0x00000bab   0x00000bab   0x0000000c   Data   RO           82    .rodata.str1.1      main.o
+    0x00000bb7   0x00000bb7   0x00000001   PAD
+    0x00000bb8   0x00000bb8   0x00000020   Data   RO          305    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_NOINIT (Exec base: 0x20000000, Load base: 0x00000bd4, Size: 0x00000000, Max: 0x0003f200, ABSOLUTE, UNINIT)
+    Execution Region RW_NOINIT (Exec base: 0x20000000, Load base: 0x00000bd8, Size: 0x00000000, Max: 0x0003f200, ABSOLUTE, UNINIT)
 
     **** No section assigned to this execution region ****
 
 
-    Execution Region RW_RAM (Exec base: 0x20000000, Load base: 0x00000bd4, Size: 0x00000710, Max: 0x0003f200, ABSOLUTE)
+    Execution Region RW_RAM (Exec base: 0x20000000, Load base: 0x00000bd8, Size: 0x00000710, Max: 0x0003f200, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x00000bd4   0x00000004   Data   RW          119    .data.SystemCoreClock  system_armcm3.o
+    0x20000000   0x00000bd8   0x00000004   Data   RW          119    .data.SystemCoreClock  system_armcm3.o
     0x20000004        -       0x00000200   Zero   RW           92    .bss.IdleTaskStack  main.o
     0x20000204        -       0x00000030   Zero   RW           91    .bss.IdleTaskTCB    main.o
     0x20000234        -       0x00000200   Zero   RW           83    .bss.Task1Stack     main.o
@@ -715,21 +715,21 @@ Memory Map of the image
     0x20000698        -       0x00000004   Zero   RW           88    .bss.Task2_Handle   main.o
     0x2000069c        -       0x00000001   Zero   RW           89    .bss.flag1          main.o
     0x2000069d        -       0x00000001   Zero   RW           90    .bss.flag2          main.o
-    0x2000069e   0x00000bd8   0x00000002   PAD
+    0x2000069e   0x00000bdc   0x00000002   PAD
     0x200006a0        -       0x00000004   Zero   RW           62    .bss.pxCurrentTCB   task.o
     0x200006a4        -       0x00000064   Zero   RW           64    .bss.pxReadyTasksLists  task.o
     0x20000708        -       0x00000004   Zero   RW           66    .bss.ulIdleTaskCounter  task.o
     0x2000070c        -       0x00000004   Zero   RW           63    .bss.xTickCount     task.o
 
 
-    Execution Region ARM_LIB_HEAP (Exec base: 0x20000710, Load base: 0x00000bd8, Size: 0x00000c00, Max: 0x00000c00, ABSOLUTE)
+    Execution Region ARM_LIB_HEAP (Exec base: 0x20000710, Load base: 0x00000bdc, Size: 0x00000c00, Max: 0x00000c00, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x20000710        -       0x00000c00   Zero   RW            1    ARM_LIB_HEAP.bss    anon$$obj.o
 
 
-    Execution Region ARM_LIB_STACK (Exec base: 0x2003fe00, Load base: 0x00000bd8, Size: 0x00000200, Max: 0x00000200, ABSOLUTE)
+    Execution Region ARM_LIB_STACK (Exec base: 0x2003fe00, Load base: 0x00000bdc, Size: 0x00000200, Max: 0x00000200, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -745,13 +745,13 @@ Image component sizes
 
        118          0          0          0          0       2128   list.o
        304          0         12          0       1690       2380   main.o
-       364         12          0          0          0       2001   port.o
+       368         12          0          0          0       2002   port.o
         16          0        960          0          0        877   startup_armcm3.o
         38          0          0          4          0       1480   system_armcm3.o
        918          0          5          0        112       3750   task.o
 
     ----------------------------------------------------------------------
-      1786         12       1010          4       5388      12616   Object Totals
+      1790         12       1010          4       5388      12617   Object Totals
          0          0         32          0       3584          0   (incl. Generated)
         28          0          1          0          2          0   (incl. Padding)
 
@@ -797,15 +797,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      2018         28       1010          4       5388      12968   Grand Totals
-      2018         28       1010          4       5388      12968   ELF Image Totals
-      2018         28       1010          4          0          0   ROM Totals
+      2022         28       1010          4       5388      12969   Grand Totals
+      2022         28       1010          4       5388      12969   ELF Image Totals
+      2022         28       1010          4          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 3028 (   2.96kB)
+    Total RO  Size (Code + RO Data)                 3032 (   2.96kB)
     Total RW  Size (RW Data + ZI Data)              5392 (   5.27kB)
-    Total ROM Size (Code + RO Data + RW Data)       3032 (   2.96kB)
+    Total ROM Size (Code + RO Data + RW Data)       3036 (   2.96kB)
 
 ==============================================================================
 
